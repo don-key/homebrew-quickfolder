@@ -9,6 +9,11 @@ cask "quickfolder" do
 
   app "QuickFolder.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/QuickFolder.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/quickfolder",
   ]
