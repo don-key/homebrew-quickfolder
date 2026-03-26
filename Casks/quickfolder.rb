@@ -11,7 +11,8 @@ cask "quickfolder" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/QuickFolder.app"]
+                   args: ["-cr", "#{appdir}/QuickFolder.app"],
+                   sudo: true
   end
 
   zap trash: [
