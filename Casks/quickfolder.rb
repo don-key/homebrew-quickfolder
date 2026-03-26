@@ -1,6 +1,6 @@
 cask "quickfolder" do
-  version "1.1.0"
-  sha256 "80b4912c357da66d2d8ccb328458cd55704c9c685a9352dfaa89310ebb5738cf"
+  version "1.1.1"
+  sha256 "90a8290f6fd726cbd6da966b81f31c7328d6441bd8d70426943128fcab9600c7"
 
   url "https://github.com/don-key/quickfolder/releases/download/v#{version}/QuickFolder-#{version}-arm64.dmg"
   name "QuickFolder"
